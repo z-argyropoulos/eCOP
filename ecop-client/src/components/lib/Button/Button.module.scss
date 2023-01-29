@@ -1,0 +1,33 @@
+@import '../../../styles/theme/shape.scss';
+@import '../../../styles/theme/colors.scss';
+
+.button {
+  border: none;
+  margin: 0;
+  padding: 8px 20px;
+  width: auto;
+  overflow: visible;
+  cursor: pointer;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  border-radius: $border-radius;
+
+  &--primary {
+    background-color: $primary;
+  }
+
+  &--secondary {
+    background-color: $secondary;
+  }
+
+  &:disabled {
+    background-color: rgb(202, 201, 201);
+    cursor: default;
+  }
+
+  &__text {
+    color: $text-primary-contrast;
+  }
+}

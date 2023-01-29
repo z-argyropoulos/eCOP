@@ -1,12 +1,25 @@
 import Button from '@components/lib/Button';
-import './App.css';
+import './styles/global/fonts.scss';
+import './styles/global/app.scss';
 
 const handleClick = () => {
   console.log('click');
 };
 
 function App() {
-  return <Button onClick={handleClick}>Click me</Button>;
+  return (
+    <div>
+      <Button onClick={handleClick} variant='primary'>
+        Primary
+      </Button>
+      <Button onClick={handleClick} variant='secondary'>
+        Secondary
+      </Button>
+      <Button onClick={handleClick} disabled>
+        Disabled
+      </Button>
+    </div>
+  );
 }
 
 export default App;
